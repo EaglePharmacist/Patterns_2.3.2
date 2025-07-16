@@ -44,7 +44,7 @@ public class AuthTest {
     }
 
     @Test
-    void shoulsGetErrorIfWrongLogin(){
+    void shouldGetErrorIfWrongLogin(){
         var registeredUser = DataGenerator.getRegisteredUser("active");
         var wrongLogin = DataGenerator.getRandomLogin();
         $("[data-test-id='login'] input").setValue(wrongLogin);

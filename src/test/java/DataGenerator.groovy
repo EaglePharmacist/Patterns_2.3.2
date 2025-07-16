@@ -53,12 +53,12 @@ public class DataGenerator {
         sendRequest(registeredUser);
         return registeredUser;
     }
-@Value
+    @Value
     public static class RegistrationDto{
         String login;
         String password;
         String status;
-}
+    }
 
 
 
